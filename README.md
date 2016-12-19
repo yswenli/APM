@@ -37,3 +37,21 @@ client.OnDisConnected += Client_OnDisConnected;
 client.OnError += Client_OnError;
 
 client.Connect();
+
+
+<b>Server send message</b>
+
+server.SendMsg(remote, "server:hello   " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+
+<b>Server send file</b>
+
+server.SendFile(UserToken remote, string fileName);
+
+<b>Client send message</b>
+
+client.SendMsg("client:hello   " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+
+<b>Client send file</b>
+
+client.sendFile(string fileName);
+
