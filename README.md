@@ -1,6 +1,6 @@
 # APM
 
-High performance TCP communication framework，It is very simple to use，and the general server easy connection on millions
+High performance TCP communication framework,It is very simple to use，and the general server easy  connection on millions ;message forwarding support, publish subscribe model for.
 
 <b>Server Example:</b>
 
