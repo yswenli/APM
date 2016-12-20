@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="APM.Core">
-      <HintPath>..\APM.Core\bin\Debug\APM.Core.dll</HintPath>
+    <Reference Include="APM.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\APM.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="APM.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\APM.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="APM.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\APM.Server.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
