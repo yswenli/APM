@@ -2,7 +2,7 @@
 
 High performance TCP communication framework,It is very simple to use，and the general server easy  connection on millions ;message forwarding support for publish/subscribe、private  model.
 
-高性能的TCP通信框架，它使用非常简单，和一般的服务器容易连接上百万；消息转发方式支持发布/订阅、私人模式。
+高性能的TCP通信框架，它使用非常简单，轻松连接上百万；消息转发方式支持发布/订阅、私信模式。
 
 <b>Server Example:</b>
 
