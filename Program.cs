@@ -26,15 +26,19 @@ namespace APM.ConsoleDemo
                 APMServer();
                 APMClient();
                 APMClient();
+                APMClient();
+                APMClient();
             }
             else
             {
                 Task.Factory.StartNew(() =>
                 {
-                    Thread.Sleep(2000);
+                    Thread.Sleep(5000);
                     ClientProcess();
                 });
+
                 ServerProcess(true);
+
             }
             Console.ReadLine();
         }
@@ -43,7 +47,7 @@ namespace APM.ConsoleDemo
         static void ServerProcess(bool falg = false)
         {
             Console.WriteLine("server test");
-            server = new APM.Core.Server(8889, 500);
+            server = new APM.Core.Server(8889, 65536);
             server.OnAccepted += Server_OnAccepted;
             server.OnMessage += Server_OnReceived;
             server.OnDisConnected += Server_OnDisConnected;
@@ -191,9 +195,9 @@ namespace APM.ConsoleDemo
                 {
                     if (apmClient.Connected)
                     {
-                        apmClient.SendChannelMsg("all", string.Format("client:{0}    {1}", msg, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")));
+                        apmClient.SendChannelMsg("all", string.Format("大家好，我是client:{0}    {1}", msg, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff")));
                     }
-                    Thread.Sleep(0);
+                    Thread.Sleep(10);
                 }
             });
             Console.WriteLine("APMClient:{0} 已连接到服务器", userID);
